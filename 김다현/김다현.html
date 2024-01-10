@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약자 정보 입력</title>
+</head>
+<body>
+  <form action="../우경서/우경서.html">
+  <fieldset>
+    <legend><b>예약자 정보 입력</b></legend>
+    <label for ="name"><b>예약자명 : </b></label><input type="text" id="name" autofocus required></div>
+    <div><label for = "tel"><b>연락처 : </b></label><input type="tel" id="tel" required placeholder="'-'를 제외하고 입력해주세요.'"></div>
+    <div><label for = "email"><b>이메일 : </b></label><input type="text" id="email" required>@
+    <select name ="select" id="select">
+      <option value="naver.com" selected>naver.com</option>
+      <option value="gmail.com">gmail.com</option>
+      <option value="hanmail.net">hanmail.net</option>
+      <option value="kakao.com">kakao.com</option>
+      <option value="pukyong.ac.kr">pukyong.ac.kr</option>
+    </select></div>
+    <div><label for ="memo"><b>메모 : </b></label><br>
+      <textarea id="memo" cols="30" rows="10" placeholder="기타 사항이 있다면 남겨주세요."></textarea></div>
+    <div>
+      <b>이벤트와 새로운 소식</b>
+      <input type="radio" name="radio" checked>메일 수신
+      <input type="radio" name="radio">메일 수신 안 함
+    </div>
+  </fieldset>
+  <br>
+  <div>
+    <input type ="button" value="이전 페이지로" onclick ="location.href='../이준오/이준오.html'">
+    <input type="submit" value="다음 페이지로" ></div>
+  <br>
+  <div><a href="https://yun9699.github.io/1212/index.html">홈 화면으로 돌아가기</a></div>
+</form>
+</body>
+</html>

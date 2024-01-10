@@ -6,77 +6,72 @@
   <title>일석이조 - 숙소 예약</title>
 </head>
 <body>
-  <div>
     <!-- header -->
     <header>
-
-
+      
     </header>
 
     <!-- main -->
     <main>
       <h1>숙박 예약</h1>
-      <form action="#">
-        <fieldset>
-          <legend>객실 정보</legend>
-            <div>
-              <label for="room">객실 유형</label>
-              <select name="room" id="room">
-                <option value="none">----- 객실 선택 -----</option>
-                <option value="standard">스탠다드</option>
-                <option value="standard-twin">스탠다드 트윈</option>
-                <option value="delux-city">디력스 시티뷰</option>
-                <option value="delux-ocean">디럭스 오션뷰</option>
-                <option value="delux-twin-city">디럭스 트윈 시티뷰</option>
-                <option value="delux-twin-ocean">디럭스 트윈 오션뷰</option>
-              </select>
-            </div>
-            <div>
-              <label for="people-num">투숙 인원</label>
-              <input type="number" name="people-num" id="people-num" value="1" min="1" max="6">
-            </div>
-            <div>
+      <div id="booking">
+        <form action="./김다현/김다현.html">
+          <fieldset>
+            <legend>객실 정보</legend>
               <div>
-                <!-- 현재 시간 이후로 해야하는데 required -->
-                <label for="date-in">체크인</label>
-                <input type="date" name="date-in" id="date-in" min="2024-01-11" max="2024-02-11">
+                <label for="room">객실 유형</label>
+                <select name="room" id="room">
+                  <option value="none">----- 객실 선택 -----</option>
+                  <option value="standard">스탠다드</option>
+                  <option value="standard-twin">스탠다드 트윈</option>
+                  <option value="delux-city">디력스 시티뷰</option>
+                  <option value="delux-ocean">디럭스 오션뷰</option>
+                  <option value="delux-twin-city">디럭스 트윈 시티뷰</option>
+                  <option value="delux-twin-ocean">디럭스 트윈 오션뷰</option>
+                </select>
               </div>
               <div>
-                <!-- 체크인 날짜 이후로 해야할 것 같은데 required -->
-                <label for="date-out">체크아웃</label> 
-                <input type="date" name="date-out" id="date-out" min="2024-01-12" max="2024-02-11">
+                <label for="people-num">투숙 인원</label>
+                <input type="number" name="people-num" id="people-num" value="1" min="1" max="6">
               </div>
+              <div>
+                <div>
+                  <!-- 현재 시간 이후로 해야하는데 required -->
+                  <label for="date-in">체크인</label>
+                  <input type="date" name="date-in" id="date-in" min="2024-01-11" max="2024-02-11">
+                </div>
+                <div>
+                  <!-- 체크인 날짜 이후로 해야할 것 같은데 required -->
+                  <label for="date-out">체크아웃</label> 
+                  <input type="date" name="date-out" id="date-out" min="2024-01-12" max="2024-02-11">
+                </div>
+              </div>
+          </fieldset>
+          <fieldset>
+            <legend>객실 옵션</legend>
+            <label for="room-option1">조식 포함</label>
+            <input type="radio" name="breakfast" id="room-option1" value="breakfast">
+            <label for="room-option2">조식 없음</label>
+            <input type="radio" name="breakfast" id="room-option2" value="no-breakfast" checked>
+            <label for="room-option2"></label>
+            <div>
+              <label for="room-option3">인피니티풀</label>
+              <input type="checkbox" name="pool" id="pool">
             </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>객실 옵션</legend>
-          <label for="room-option1">조식 포함</label>
-          <input type="radio" name="breakfast" id="room-option1" value="breakfast">
-          <label for="room-option2">조식 없음</label>
-          <input type="radio" name="breakfast" id="room-option2" value="no-breakfast" checked>
-          <label for="room-option2"></label>
-          <div>
-            <label for="room-option3">인피니티풀</label>
-            <input type="checkbox" name="pool" id="pool">
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>기본 제공 서비스</legend>
-          <dl>
-            
-          </dl>
-        </fieldset>
-
-        <!-- 다음 페이지로 연결되도록 -->
-        <input type="submit" value="다음">
+          </fieldset>
+  
+          <fieldset>
+            <legend>기본 제공 서비스</legend>
+            <table></table>
+          </fieldset>
+  
+          <!-- 다음 페이지로 연결되도록 -->
+          <input type="submit" value="다음">
+        </form>
+        <!-- 메인 페이지로 숙소 소개 페이지로 돌아가야 함. -->
+        <!-- 일단 required 옵션 뺌 -->
+        <form action="../index.html"><input type="submit" value="취소"></form>
+      </div>
     </main>
-
-    <!-- 메인 페이지로 숙소 소개 페이지로 돌아가야 함. -->
-    <!-- 일단 required 옵션 뺌 -->
-    <form action="###"><input type="submit" value="취소"></form>
-  </div>
-  </form>
 </body>
 </html>

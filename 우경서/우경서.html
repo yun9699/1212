@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결제 정보 입력</title>
+</head>
+<body>
+  <h1>결제 정보 입력</h1>
+  <form action="">
+    <fieldset>
+      <legend>결제 수단 선택</legend>
+      <div>
+        <ul>
+          <li><label><input type="radio" name="payment">카드 결제 선택</label></li>
+          <li><label><input type="radio" name="payment">카드 결제 선택 안함</label></li>
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>결제 카드 선택</legend>
+      <label for="card">카드 종류 선택</label>
+      <select id='card'>
+        <option value="1">BC카드</option>
+        <option value="2">삼성카드</option>
+        <option value="3">롯데카드</option>
+        <option value="4">우리카드</option>
+        <option value="5">농협카드</option>
+      </select>
+    </fieldset>
+      <div>
+        <button type="submit">주문하기</button>
+        <button type="reset">취소하기</button>
+      </div>
+  </form>
+</body>
+</html>
